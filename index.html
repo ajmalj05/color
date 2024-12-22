@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Color</title>
+</head>
+<body>
+
+    <h3>Change Text Color Based on Selection</h3>
+    
+    <!-- Drop-down List -->
+    <select id="colorSelect">
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="White">White</option>
+        <option value="Black">Black</option>
+    </select>
+    
+    <!-- Button to Change Text Color -->
+    <button onclick="changeTextColor()">Change Color</button>
+    
+    <!-- Paragraph to Change Color -->
+    <p id="text">Sample test…</p>
+
+    <script>
+        // Function to change the text color based on the selected option
+        function changeTextColor() {
+            var selectedColor = document.getElementById("colorSelect").value;
+            document.getElementById("text").style.color = selectedColor;
+        }
+    </script>
+
+</body>
+</html>
